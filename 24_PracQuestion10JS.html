@@ -3,8 +3,68 @@
         <title>Question 10</title>
     </head>
     <body>
+        <section style="background-color: lightsalmon;">
+            <br/><h1 style="text-align: center ;"><b>REGISTRATION FOR VACCINATION</b></h1><br/> 
+            <form name="details" action="" method="post">
+                <table>
+                    <tr>
+                        <td>Name</td>
+                        <td><input type = "text" pattern = "[A-Za-z]{2,25}" placeholder="Enter Name" autofocus></td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td><textarea rows="2" cols="20" placeholder="Enter Complete Address"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input type = "email" placeholder="Enter Email"></td>
+                    </tr>
+                    <tr>
+                        <td>Contact</td>
+                        <td><input type = "number" pattern="[0-9]{8,10}" placeholder="Enter Mobile Number"></td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td>
+                            <input type = "radio"> Male
+                            <input type = "radio"> Female
+                            <input type = "radio"> Other
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>D.O.B.</td>
+                        <td><input type = "date"></td>
+                    </tr>
+                    <tr>
+                        <td>Vaccination Preferences</td>
+                        <td>
+                            <input type = "checkbox" name = "skills"> Covishield
+                            <input type = "checkbox" name = "skills"> Covaxin
+                            <input type = "checkbox" name = "skills"> Sputnik
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Vaccination Center</td>
+                        <td>
+                            <input type = "text" name="Center" list="center" placeholder="Select from list"/>
+                            <datalist id="center">
+                                <option>PHC</option>
+                                <option> District Hospital</option>
+                                <option> Covid Center</option>
+                            </datalist>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type = "submit"></td>
+                        <td><input type = "reset"></td>
+                    </tr>
+            </table>
+            </form>
+            <hr/>
+        </section>
         <script>
 //QUESTION 10
+            //alert()
         </script>
     </body>
 </html>
