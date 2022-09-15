@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+            Function Closure
+        </title>
+    </head>
+    <body>
+        <script>
+            function f1(){
+            var y=200
+            console.log(y) // we can't access x or even anything from inner funct f2 outside it
+            function f2(){
+            var x=100
+            console.log(x+" "+y) // we can access y of outer funct in the inner funct f2
+            }
+            f2() // we have to call the inner funct in outer funct
+            }
+        </script>
+        <script>
+            f1()
+            //f2() doesn't work
+            //f1.f2() doesn't work
+        </script>
+    </body>
+</html>

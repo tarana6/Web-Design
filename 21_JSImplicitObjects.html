@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>
+            Implicit Objects
+        </title>
+    </head>
+    <body>
+        <script>
+//MATH
+            console.log(Math.round(123.55))
+            console.log(Math.trunc(123.55))
+//DATE
+            var date=new Date()
+            var date=new Date("2022-09-12")
+            var date=new Date("September, 12 2022")
+            console.log(date)
+            console.log(date.getDate())
+            console.log(date.getDay())
+            console.log(date.getMonth())
+            console.log(date.getYear())
+            console.log(date.getFullYear())
+            console.log(date.getHours()+":"+date.getMinutes()+":"+date.getSeconds())
+//STRING
+            var s1="hello"    
+            console.log(s1.charAt(0))    
+            console.log(s1.length)    
+            console.log(s1.match("[a-z]*"))    
+            console.log(s1.concat(" world"))    
+            console.log(s1)    
+            console.log(s1.substring(1,4))
+//OBJECT
+            /*var book=new Object()
+            book.title="Physics"
+            book.author="Dr.Kalam"
+            book.price=1200*/
+            var book={title:"Physics",author:"Dr. Kalam",price:1200,dop:new Date("January,1,1990"),instock:true}
+            console.log("Title: "+book.title)
+            console.log("Author: "+book.author)
+            console.log("Price: Rs."+book.price)
+            console.log("Publication date: "+book.dop.getDate()+"/"+(book.dop.getMonth()+1)+"/"+book.dop.getFullYear())
+            console.log("In stock? "+((book.instock)?"yes":"no"))
+        </script>
+    </body>
+</html>

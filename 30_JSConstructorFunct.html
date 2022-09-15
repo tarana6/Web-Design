@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+            Constructor Function
+        </title>
+    </head>
+    <body>
+        <script>
+            function init(){
+                this.title=null
+                this.price=0
+            }
+            function paramInit(title, price){
+                this.title=title
+                this.price=price
+            }
+        </script>
+        <script>
+            let book1=new init();
+                console.log(book1['title']+" "+book1.price)
+            let book2=new paramInit("Comp sci",1200)
+                console.log(book2['title']+" "+book2.price)
+        </script>
+    </body>
+</html>

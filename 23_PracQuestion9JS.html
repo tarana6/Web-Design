@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Question 9</title>
+    </head>
+    <body>
+        <script> 
+            const date = new Date();
+            const n = date.toDateString();
+            const time = date.toLocaleTimeString();
+            document.write(date.getDate()+"/"+(date.getMonth()+1)+"/"+date.getFullYear())
+            var h = date.getHours()
+            if(h<12){
+                document.write(" - Good Morning!")
+            }
+            else if(h>17){
+                document.write(" - Good Evening!")
+            }
+            else{
+                document.write(" - Good Afternoon!")
+            }
+        </script>
+    </body>
+</html>

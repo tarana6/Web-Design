@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head> 
+        <title>UI</title>
+    </head>
+    <body style = "background-color : pink">
+        <form name="Profile" action="" method="post" >
+            <table>
+                <tr>
+                    <td>
+                        Name
+                    </td>
+                    <td>
+                        <input type = "text" pattern = "[A-Za-z]{2,25}" placeholder="Enter Name" autofocus>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Gender
+                    </td>
+                    <td>
+                        <input type = "radio"> Male
+                        <input type = "radio"> Female
+                        <input type = "radio"> Other
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Phone
+                    </td>
+                    <td>
+                        <input type = "number" pattern="[0-9]{8,10}" placeholder="Enter Mobile Number">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Email
+                    </td>
+                    <td>
+                        <input type = "email" placeholder="Enter Email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        D.O.B.
+                    </td>
+                    <td>
+                        <input type = "date">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Photo
+                    </td>
+                    <td>
+                        <input type = "file">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Address
+                    </td>
+                    <td>
+                        <textarea rows="2" cols="20"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Skills
+                    </td>
+                    <td>
+                        <input type = "checkbox" name = "skills"> SQL
+                        <input type = "checkbox" name = "skills"> OOPS
+                        <input type = "checkbox" name = "skills"> Testing
+                        <input type = "checkbox" name = "skills"> Web Design
+                        <input type = "checkbox" name = "skills"> PowerBI
+                        <input type = "checkbox" name = "skills"> Python
+                        <input type = "checkbox" name = "skills"> AWS
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Locatons
+                    </td>
+                    <td>
+                        <input type = "text" name="location" list="loclist"/>
+                        <datalist id="loclist">
+                            <option>
+                                Mumbai
+                            </option>
+                            <option>
+                                Pune
+                            </option>
+                            <option>
+                                Banglore
+                            </option>
+                            <option>
+                                Hyderabad
+                            </option>
+                            <option>
+                                Gurgaon
+                            </option>
+                            <option>
+                                Noida
+                            </option>
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type = "submit">
+                    </td>
+                    <td>
+                        <input type = "reset">
+                    </td>
+                </tr>
+        </table>
+        </form>
+    </body>
+</html>

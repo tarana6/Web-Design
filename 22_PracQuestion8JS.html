@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Question 8</title>
+    </head>
+    <body>
+        <script>
+            var roi, amount, period, si, ci
+            roi=parseFloat(prompt("Enter Rate Of Interest"))
+            amount=parseFloat(prompt("Enter Principal Amount"))
+            time=parseFloat(prompt("Enter Time Period In Years"))
+            si = ((time*roi*amount)/100)
+            ci = ((amount*(1+roi/100)^time)-amount)
+            alert("Simple Interest is: "+si)
+            alert("compound Interest is: "+ci)
+        </script>
+    </body>
+</html>

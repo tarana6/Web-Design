@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Question 11</title>
+    </head>
+    <body>
+        <script>
+            var price, units, tax, bill
+            price = parseFloat(prompt("Enter price per unit: "))
+            units = parseFloat(prompt("Enter no. of units purchased: "))
+            tax = parseFloat(prompt("Enter tax percentage: "))
+            bill = ((price*units) + ((price*units)*(tax/100)))
+            document.write(" Total bill is: " + bill )
+        </script>
+    </body>
+</html>

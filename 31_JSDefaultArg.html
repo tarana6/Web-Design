@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>
+            Default Argument
+        </title>
+    </head>
+    <body>
+        <script>
+            function calSI(principle, period, roi=6.5){
+            return principle*period*roi/100;
+            }
+        </script>
+        <script>
+            var si
+            si=calSI(100000,1,7.2)
+            //si=calSI(100000,1)
+            alert("Simple interest: Rs."+si)
+        </script>
+    </body>
+</html>

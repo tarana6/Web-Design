@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>
+            OOP: Class
+        </title>
+    </head>
+    <body>
+        <script>
+            class Book{
+            //var title
+            //var price
+            /*constructor(){
+            this.title=null
+            this.price=0
+            }*/
+            constructor(title,price,dop,author,instock){
+            this.title=title
+            this.price=price
+            this.dop=dop
+            this.author=author
+            this.instock=instock
+            }
+            }
+        </script>
+        <script>
+            var book1=new Book(null,0,"0-0-0","none","no")
+            var book2=new Book("Robotics",1234,"15-02-1999","Mr.Stark","yes")
+            console.log(book1.title+" "+book1.price+" "+book1['dop']+" "+ book1['author'],book1['instock'])
+            console.log(book2['title']+" "+book2.price+" "+book2['dop'] +" "+ book2['author'],book2['instock'])
+        </script>
+    </body>
+</html>
